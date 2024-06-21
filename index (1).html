@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Horse</title>
+    <meta name="description" content="Official website of Dark Horse, a professional Pokemon Unite team based in North America.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #660000, #b8860b, #ffd700);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header, nav, section, footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff4500, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+            position: relative;
+        }
+        header h1::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url ('pika.png') no-repeat center;
+            background-size: cover;
+            opacity: 0.2;
+            mix-blend-mode: screen;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+            opacity: 0.8;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #ffd700;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+        }
+        section {
+            padding: 70px 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #ff4500;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .players {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .player {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px;
+            max-width: 300px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(255, 215, 0, 0.1);
+        }
+        .player h3 {
+            color: #ff4500;
+            margin-top: 0;
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .player img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .player p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .player-links a {
+            display: block;
+            color: #ffd700;
+            margin-top: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        .player-links a:hover {
+            color: #ff4500;
+        }
+        .contact .socials a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+        .contact .socials a:hover {
+            color: #ff4500;
+        }
+        footer {
+            font-size: 1.2em;
+            margin-top: 50px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">
+    <img src="DarkHorse.png" alt="Dark Horse Logo">
+</div>
+<header>
+    <h1>Dark Horse</h1>
+    <p>Professional Pokemon Unite Team</p>
+    <p>Region: North America</p>
+</header>
+<nav>
+    <a href="#roster">Team Roster</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#sponsorship">Sponsorship</a>
+    <a href="#merchandise">Merchandise</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section id="roster">
+    <h2>Team Roster</h2>
+    <div class="players">
+        <div class="player">
+            <img src="papi.png" alt="EloPapi Profile Picture">
+            <h3>EloPapi</h3>
+            <p>Hello! I'm EloPapi, the GOAT Jungler.</p>
+            <div class="player-links">
+                <a href="https://linktr.ee/eloPapi" target="_blank">Linktree</a>
+                <a href="https://Unite.api/eloPapi" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+        <div class="player">
+    <img src="trev.jpg" alt="Volc Profile Picture">
+    <h3>Volc</h3>
+    <p>Hey, I'm Volc! I am stuck playing Trevenant every game.</p>
+    <div class="player-links">
+        <a href="https://linktr.ee/volc" target="_blank">Linktree</a>
+        <a href="https://Unite.api/volc" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+        <div class="player">
+            <img src="venu.jpg" alt="Yetti Profile Picture">
+            <h3>Yetti</h3>
+            <p>Hi, I'm Yetti! Dropping 100k bombs on your forehead teehee!</p>
+            <div class="player-links">
+                <a href="https://linktr.ee/yetti" target="_blank">Linktree</a>
+                <a href="https://Unite.api/yetti" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+        <div class="player">
+            <img src="elde.jpg" alt="Walt Profile Picture">
+            <h3>Walt</h3>
+            <p>What's up? I'm Walt, Captain and mental abuser for Dark Horse.</p>
+            <div class="player-links">
+                <a href="https://linktr.ee/walt" target="_blank">Linktree</a>
+                <a href="https://Unite.api/walt" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+        <div class="player">
+            <img src="machamp.jpg" alt="CrossHandEdd Profile Picture">
+            <h3>CrossHandEdd</h3>
+            <p>Yo, I'm Edd! I will tear that ass up.</p>
+            <div class="player-links">
+                <a href="https://linktr.ee/crosshandedd" target="_blank">Linktree</a>
+                <a href="https://Unite.api/crosshandedd" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+        <div class="player">
+            <img src="mew.png" alt="Mipples Profile Picture">
+            <h3>Mipples</h3>
+            <p>Hi, I'm Mipples! PACMAN.</p>
+            <div class="player-links">
+                <a href="https://linktr.ee/mipples" target="_blank">Linktree</a>
+                <a href="https://Unite.api/mipples" target="_blank">UniteAPI</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="achievements">
+    <h2>Team Achievements</h2>
+    <p>Pokemon Unite World Champions 2025!</p>
+    <p>Hot Dog Eating Contest Champs 10 Years in a row!</p>
+    <p>Doing nothing longer than anyone else!</p>
+    <p>Unluckiest Team when it comes to rules!</p>
+</section>
+<section id="schedule">
+    <h2>Schedule</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li>Monday: 9:00 PM - 11:00 PM EST</li>
+        <li>Wednesday: 9:00 PM - 11:00 PM EST</li>
+        <li>Friday: 9:00 PM - 11:00 PM EST</li>
+    </ul>
+</section>
+<section id="sponsorship">
+    <h2>Sponsorship</h2>
+    <p>Interested in sponsoring us? Contact us for more information!</p>
+</section>
+<section id="merchandise">
+    <h2>Merchandise</h2>
+    <div class="merchandise-images">
+        <img src="FRT.jpg" alt="Flamin' Hot Jersey Front">
+        <img src="BCK.jpg" alt="Flamin' Hot Jersey Back">
+        <img src="artic.png" alt="Merchandise 3">
+        <img src="behind flame.png" alt="Merchandise 4">
+<style>
+    .merchandise-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .merchandise-images img {
+        max-width: 200px; /* Adjust the max-width as needed */
+        height: auto;
+        margin: 10px; /* Optional: Add margin for spacing between images */
+    }
+</style>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        <p>Connect with us:</p>
+        <div class="socials">
+            <a href="https://twitter.com/flaminhotdepressos" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/flaminhotdepressos" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/channel/your-channel" target="_blank">YouTube</a>
+            <a href="mailto:contact@flaminhotdepressos.com">Email</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Dark Horse. All rights reserved.</p>
+    <p>Disclaimer: The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+</footer>
+</body>
+</html>
